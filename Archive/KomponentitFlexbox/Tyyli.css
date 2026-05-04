@@ -1,0 +1,20 @@
+.komponentit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.komponentti {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 34%;
+    text-align: center;
+}
+.komponentti img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
