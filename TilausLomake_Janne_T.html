@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilauslomake</title>
+    </head>
+    <body>
+        <form>
+            <fieldset style="width: 90%;">
+                    <strong><legend style="font-family: Tahoma;">Tilauslomake</legend></strong>
+                <label for="enimi">Etunimi:</label><br>
+                <input type="text" id="enimi" name="enimi" tabindex="1"><br>
+                <label for="snimi">Sukunimi:</label><br>
+                <input type="text" id="snimi" name="snimi" tabindex="2"><br>
+                <label for="osoite">Osoite:</label><br>
+                <input type="text" id="osoite" name="osoite" tabindex="3"><br>
+                <label for="postinro">Postinumero:</label><br>
+                <input type="text" id="postinro" name="postinro" tabindex="4"><br>
+                <label for="postitmp">Postitoimipaikka:</label><br>
+                <input type="text" id="postitmp" name="postitmp" tabindex="5"><br>
+                <label for="puhelin">Puhelinnumero:</label><br>
+                <input type="text" id="puhelin" name="puhelin" tabindex="6"><br>
+                <label for="sposti">Sähköposti:</label><br>
+                <input type="text" id="sposti" name="sposti" tabindex="7"><br>
+                <label for="tilausjakso">Tilausjakso:</label><br>
+                <input type="radio" id="3kk" name="tilausjakso" value="3kk" checked="checked" tabindex="8">
+                <label for="3kk">3 kuukautta</label><br>
+                <input type="radio" id="6kk" name="tilausjakso" value="6kk" tabindex="9">
+                <label for="6kk">6 kuukautta</label><br>
+                <input type="radio" id="12kk" name="tilausjakso" value="12kk" tabindex="10">
+                <label for="12kk">12 kuukautta</label><br>
+                <input type="submit" name="laheta" id="laheta" value="Lähetä tilaus" tabindex="11">
+                <input type="reset" name="tyhjenna" id="tyhjenna" value="Tyhjennä lomake" tabindex="12">
+            </fieldset>
+        </form>
+    </body>
+</html>

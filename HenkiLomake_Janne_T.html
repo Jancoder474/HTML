@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Henkimaailman henkikirjoitus</title>
+    </head>
+    <body style="margin-left: 5%; margin-right: 5%; font-family: Tahoma;">
+        <h1>Henkimaailman henkikirjoitus</h1>
+        <p>Tervetuloa täyttämään henkimaailman henkikirjoituslomake. Ole ystävällinen ja vastaa alla oleviin kysymyksiin parhaan kykysi mukaan.</p>
+        <p><strong>Lähetä</strong> tiedot painamalla Lähetä-painiketta.</p>
+        <hr>
+        <form>
+            <strong><label for="name">Nimi (ei pakollinen):</label></strong>
+            <input type="text" id="name" name="name"><br><br>
+
+            <strong><label for="spuoli">Sukupuoli:</label></strong>
+            <input type="radio" id="mies" name="spuoli" value="mies">
+            <label for="mies">Mies</label>
+            <input type="radio" id="nainen" name="spuoli" value="nainen">
+            <label for="nainen">Nainen</label>
+            <input type="radio" id="entieda" name="spuoli" value="entieda">
+            <label for="entieda">En tiedä</label><br>><br>
+
+            <strong><label for="lisavarusteet">Lisävarusteet (Valitse kaikki sopivat):</label></strong><br>
+            <input type="checkbox" id="vinksahtanuthuumorintaju" name="lisavarusteet" value="vinksahtanuthuumorintaju">
+            <label for="vinksahtanuthuumorintaju">Vinksahtanut huumorintaju</label><br>
+            <input type="checkbox" id="kalanmaksaoljy" name="lisavarusteet" value="kalanmaksaoljy">
+            <label for="kalanmaksaoljy">Kalanmaksaöljy</label><br>
+            <input type="checkbox" id="pakkasneste" name="lisavarusteet" value="pakkasneste">
+            <label for="pakkasneste">Pakkasneste</label><br>
+            <input type="checkbox" id="svgatuki" name="lisavarusteet" value="svgatuki">
+            <label for="svgatuki">SVGA-tuki</label><br>
+            <input type="checkbox" id="olevaisenpelko" name="lisavarusteet" value="olevaisenpelko">
+            <label for="olevaisenpelko">Olevaisen pelko</label><br>
+            <input type="checkbox" id="katalysaattori" name="lisavarusteet" value="katalysaattori">
+            <label for="katalysaattori">Katalysaattori</label><br>
+            <input type="checkbox" id="monivitamiinit" name="lisavarusteet" value="monivitamiinit">
+            <label for="monivitamiinit">Monivitamiinit</label><br><br>
+
+            <input type="submit" value="Lähetä tiedot">
+            <input type="reset" value="Tyhjennä lomake">
+        </form>
+        <hr>
+    </body>
+</html>
