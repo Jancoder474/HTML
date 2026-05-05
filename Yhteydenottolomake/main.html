@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yhteydenottolomake</title>
+        <link rel="stylesheet" href="tyyli.css">
+    </head>
+    <body>
+        <form>
+            <table class="lomake">
+                <tr>
+                    <td class="c1"><strong><label class="l1" for="etunimi">Etunimi</label></strong></td>
+                    <td><input type="text" id="etunimi" name="etunimi"></td>
+                </tr>
+                <tr>
+                    <td class="c1"><strong><label class="l1" for="sukunimi">Sukunimi</label></strong></td>
+                    <td><input type="text" id="sukunimi" name="sukunimi"></td>
+                </tr>
+                <tr>
+                    <td class="c1"><strong><label class="l1" for="sukupuoli">Sukupuoli</label></strong></td>
+                    <td>
+                        <input type="radio" id="mies" name="sukupuoli" value="mies">
+                        <label class="l2" for="mies">Mies</label><br>
+                        <input type="radio" id="nainen" name="sukupuoli" value="nainen">
+                        <label class="l2" for="nainen">Nainen</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="c1"><strong><label class="l1" for="asia">Asian laatu</label></strong></td>
+                    <td>
+                        <select name="asia" id="asia">
+                            <option value="valitse">Valitse listalta</option>
+                            <option value="palaute">Palaute</option>
+                            <option value="ehdotus">Ehdotus</option>
+                            <option value="muu">Muu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="c1"><strong><label class="l1" for="tarkemmin">Tarkempi määrittely</label></strong></td>
+                    <td><textarea id="tarkemmin" name="tarkemmin" rows="5" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
