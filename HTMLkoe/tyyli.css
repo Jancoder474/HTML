@@ -1,0 +1,159 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Georgia;
+    box-sizing: border-box;
+}
+header {
+    background-color: #208020;
+    color: black;
+    padding: 2%;
+}
+header h1 {
+    font-size: 50px;
+    margin-left: 5%;
+}
+header p {
+    font-size: 25px;
+    margin-left: 5%;
+}
+nav {
+    background-color: #888888;
+    color: black;
+    margin-top: 10px;
+}
+.navigointi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+.nav-item a:hover {
+    text-decoration: underline;
+    background-color: #afafaf;
+}
+.tietoa {
+    border: 2px solid #888888;
+    color: black;
+    margin-top: 25px;
+    padding: 10px;
+}
+.tietoa h2 {
+    margin-left: 5%;
+}
+.tietoa img {
+    display: block;
+    width: 34%;
+}
+.tietoa p {
+    margin-left: 5%;
+}
+.projektit {
+    border: 2px solid #888888;
+    color: black;
+    margin-top: 25px;
+    padding: 10px;
+}
+.projektit h3 {
+    margin-left: 5%;
+}
+.projektit table {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border: 1px solid black;
+}
+.projektit th {
+    border: 1px solid black;
+    background-color: #888888;
+    padding: 5px;
+}
+.projektit td {
+    border: 1px solid black;
+    background-color: #afafaf;
+    text-align: center;
+    padding: 5px;
+}
+.projektit a {
+    text-decoration: none;
+    color: purple;
+}
+.aikataulu {
+    border: 2px solid #888888;
+    color: black;
+    margin-top: 25px;
+    padding: 10px;
+}
+.aikataulu h3 {
+    margin-left: 5%;
+}
+.aikataulu table {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border: 1px solid black;
+}
+.aikataulu th {
+    border: 1px solid black;
+    background-color: #888888;
+    padding: 5px;
+}
+.aikataulu td {
+    border: 1px solid black;
+    background-color: #afafaf;
+    text-align: center;
+    padding: 5px;
+}
+.upotus {
+    border: 2px solid #888888;
+    color: black;
+    margin-top: 25px;
+    padding: 10px;
+}
+.upotus h3 {
+    margin-left: 5%;
+}
+.upotus iframe {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: auto;
+}
+.yhteys {
+    background-color: #208020;
+    color: black;
+    margin-top: 25px;
+    padding: 2%;
+}
+.yhteys h3 {
+    margin-left: 5%;
+}
+.yhteys table {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+.yhteys th {
+    border: 1px solid black;
+    background-color: #888888;
+    padding: 5px;
+}
+.yhteys td {
+    border: 1px solid black;
+    background-color: #afafaf;
+    text-align: center;
+    padding: 5px;
+}
+.yhteys a {
+    text-decoration: none;
+    color: purple;
+}
