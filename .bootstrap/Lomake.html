@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Lomake</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1>Yhteystieto lomake</h1>
+            <!-- Tieto lähetetään form-tagien sisältä -->
+            <form>
+                <div class="form-group">
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" class="form-control" id="nimi" placeholder="Syötä nimesi">
+                </div>
+                <div class="form-group">
+                    <label for="sahkoposti">Sähköposti:</label>
+                    <input type="email" class="form-control" id="sahkoposti" placeholder="Syötä sähköpostisi">
+                </div>
+                <div class="form-group">
+                    <label for="pnro">Puhelinnumero:</label>
+                    <input type="tel" class="form-control" id="pnro" placeholder="Syötä puhelinnumero">
+                </div>
+                <div class="form-group">
+                    <label for="viestikentta">Viesti:</label>
+                    <input type="text" class="form-control" id="viestikentta" placeholder="Kirjoita viestisi tähän"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Lähetä</button>
+            </form>
+        </div>
+    </body>
+</html>
