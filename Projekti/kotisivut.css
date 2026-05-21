@@ -1,0 +1,17 @@
+* {
+    font-family: Verdana;
+}
+body {
+    background-image: url(Flow.jpg);
+}
+.mainhead {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 2px solid black;
+    background-color: gray;
+    padding: 10px;
+}
+.mainhead img {
+    height: auto;
+    width: 30%;
+}
