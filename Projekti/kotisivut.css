@@ -7,12 +7,14 @@ body {
 .navbar {
     display: flex;
     border: 2px solid black;
+    border-radius: 1rem;
     background-color: gray;
     margin: 1rem;
     align-items: center;
 }
 .navbar img {
     border: 2px solid black;
+    border-radius: 10rem;
     height: auto;
     max-width: 15rem;
     min-width: 10rem;
@@ -22,6 +24,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
+    border-radius: 1rem;
     background-color: lightgray;
     margin: 1rem;
     width: 100%;
@@ -31,14 +34,43 @@ body {
     padding-bottom: 1rem;
 }
 .navactive {
+    border-radius: 1rem;
     padding: 1rem;
     text-decoration: none;
     background-color: whitesmoke;
     color: black;
 }
 .navlink {
+    border-radius: 1rem;
     padding: 1rem;
     text-decoration: none;
     background-color: lightgray;
     color: black;
+}
+/* Tietoa.html */
+.tiedot {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: gray;
+}
+.tiedot div {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: lightgray;
+    box-shadow: 0 0.5rem 1rem rgba( 100, 0, 100, 0.5);
+}
+@media (min-width: 768px) {
+    .tiedot {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media (min-width: 1536px) {
+    .tiedot {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 }
