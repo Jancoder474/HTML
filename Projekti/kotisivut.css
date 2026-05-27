@@ -67,6 +67,9 @@ body {
     background-color: lightgray;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 30, 0.7);
 }
+.sposti {
+    color: black;
+}
 .yhteysitem input {
     width: 13rem;
     margin: 0.2rem;
