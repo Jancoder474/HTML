@@ -47,30 +47,43 @@ body {
     background-color: lightgray;
     color: black;
 }
-/* Tietoa.html */
-.tiedot {
-    margin: 1rem;
+.etugrid, .tietogrid, .yhteysgrid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    margin: 1rem;
+    background-color: gray;
     border: 2px solid black;
     border-radius: 1rem;
-    background-color: gray;
 }
-.tiedot div {
+.etuhead, .tietohead, .yhteyshead {
+    text-align: center;
+}
+.etuhead, .etuitem, .tietohead, .tietoitem, .yhteyshead, .yhteysitem {
+    grid-column: span 12;
     margin: 1rem;
     padding: 1rem;
     border: 2px solid black;
     border-radius: 1rem;
     background-color: lightgray;
-    box-shadow: 0 0.5rem 1rem rgba( 100, 0, 100, 0.5);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 30, 0.7);
+}
+.yhteysitem input {
+    width: 13rem;
+    margin: 0.2rem;
+}
+.yformbtn {
+    padding: 0.5rem;
 }
 @media (min-width: 768px) {
-    .tiedot {
-        grid-template-columns: 50% 50%;
+    .etuitem, .tietoitem {
+        grid-column: span 6;
     }
 }
-@media (min-width: 1536px) {
-    .tiedot {
-        grid-template-columns: 25% 25% 25% 25%;
+@media (min-width: 1280px) {
+    .tietoitem {
+        grid-column: span 4;
+    }
+    .yhteysitem {
+        grid-column: span 6;
     }
 }

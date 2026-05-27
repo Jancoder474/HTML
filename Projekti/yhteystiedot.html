@@ -15,5 +15,35 @@
                 <div class="navitem"><a href="./yhteystiedot.html" class="navactive">Ota yhteyttä</a></div>
             </nav>
         </header>
+        <div class="yhteysgrid">
+            <div class="yhteyshead">
+                <h1>Yhteydenotot</h1>
+            </div>
+            <div class="yhteysitem">
+                <h2>Janne Tick</h2>
+                <h3>Sähköposti</h3>
+                <p>jannek.tick@gmail.com</p>
+                <h3>Puhelin</h3>
+                <p>045-866-66-96</p>
+                <h3>Sijainti</h3>
+                <p>Suonenjoki, Suomi</p>
+            </div>
+            <form class="yhteysitem" action="" method="post">
+                <h2>Jätä yhteydenottopyyntö</h2>
+                <label for="ynimi">Yrityksen nimi</label><br>
+                <input class="yforminput" type="text" id="ynimi" name="ynimi" placeholder="Yrityksen nimi (ei pakollinen)"><br>
+                <br>
+                <label for="nimi">Nimi</label><br>
+                <input class="yforminput" type="text" id="nimi" name="nimi" placeholder="Yhteyshenkilön nimi" required><br>
+                <br>
+                <label for="sposti">Sähköposti</label><br>
+                <input class="yforminput" type="email" id="sposti" name="sposti" placeholder="Yhteyshenkilön sähköposti" required><br>
+                <br>
+                <label for="pnro">Puhelin</label><br>
+                <input class="yforminput" type="number" id="pnro" name="pnro" placeholder="Yhteyshenkilön puhelin" required><br>
+                <br>
+                <button class="yformbtn" type="submit">Lähetä</button>
+            </form>
+        </div>
     </body>
 </html>
