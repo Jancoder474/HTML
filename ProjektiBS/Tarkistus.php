@@ -30,7 +30,7 @@ session_start();
     }
     $tulos = tarkistasyote($_POST["nimi"], $_POST["sposti"]);
     if (is_array($tulos)) {
-        $rivi = date("Y-m-d H:i:s") . " | Nimi : {$tulos["nimi"]} | Sähköposti : {$tulos["sposti"]} | P. : {$_POST["pnro"]} " . PHP_EOL;
+        $rivi = date("Y-m-d H:i:s") . " | Yritys : {$_POST["ynimi"]} | Nimi : {$tulos["nimi"]} | Sähköposti : {$tulos["sposti"]} | P. : {$_POST["pnro"]} " . PHP_EOL;
         $tiedosto = "tiedot.txt";
         if (file_put_contents($tiedosto, $rivi, FILE_APPEND | LOCK_EX)) {
             echo "Tiedot tallennettu tiedostoon!";

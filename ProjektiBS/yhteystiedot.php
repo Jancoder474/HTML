@@ -1,3 +1,8 @@
+<?php
+session_start();
+$csrf_token = bin2hex(random_bytes(32));
+$_SESSION["csrf_token"] = $csrf_token;
+?>
 <!DOCTYPE html>
 <html lang="fi">
     <head>
@@ -15,7 +20,7 @@
             <nav class="navcontent"> 
                 <div class="navitem"><a href="./etusivu.html" class="navlink">Etusivu</a></div>
                 <div class="navitem"><a href="./tietoa.html" class="navlink">Tietoa minusta</a></div>
-                <div class="navitem"><a href="./yhteystiedot.html" class="navactive">Ota yhteyttä</a></div>
+                <div class="navitem"><a href="./yhteystiedot.php" class="navactive">Ota yhteyttä</a></div>
             </nav>
         </header>
         <div class="yhteysgrid">
@@ -31,7 +36,8 @@
                 <h3>Sijainti</h3>
                 <p>Suonenjoki, Suomi</p>
             </div>
-            <form class="yhteysitem" action="" method="post">
+            <form class="yhteysitem" action="./tarkistus.php" method="post">
+                <input type="hidden" name="csrf_token" value="<?=$csrf_token?>">
                 <h2>Jätä yhteydenottopyyntö</h2>
                 <label for="ynimi">Yritys</label><br>
                 <input type="text" id="ynimi" name="ynimi" placeholder="Yritys"><br>
