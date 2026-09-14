@@ -1,0 +1,104 @@
+* {
+    font-family: Verdana;
+    color: black;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(0, 0, 34);
+    margin-bottom: 10%;
+}
+.nav-bar {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: rgb(80, 80, 90);
+    margin: 1rem;
+    align-items: center;
+}
+.nav-bar img {
+    border: 2px solid black;
+    border-radius: 100%;
+    height: auto;
+    max-width: 15rem;
+    min-width: 10rem;
+    margin: 1rem;
+}
+.navcontent {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    margin: 1rem;
+    width: 100%;
+}
+.navitem {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navactive {
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+}
+.navlink {
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+}
+.etugrid, .tietogrid, .yhteysgrid {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    margin: 1rem;
+    background-color: rgb(80, 80, 90);
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+.etuhead, .tietohead, .yhteyshead {
+    text-align: center;
+}
+.etuhead, .etuitem, .tietohead, .tietoitem, .yhteyshead, .yhteysitem {
+    grid-column: span 12;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 30, 0.7);
+}
+.sposti {
+    color: black;
+}
+.yhteysitem input {
+    width: 13rem;
+    margin: 0.2rem;
+}
+.yformbtn {
+    padding: 0.5rem;
+}
+@media (min-width: 768px) {
+    .etuitem, .tietoitem {
+        grid-column: span 6;
+    }
+}
+@media (min-width: 1280px) {
+    .tietoitem {
+        grid-column: span 4;
+    }
+    .yhteysitem {
+        grid-column: span 6;
+    }
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    border-top: 2px solid black;
+    background-color: rgb(80, 80, 90);
+    text-align: center;
+}
