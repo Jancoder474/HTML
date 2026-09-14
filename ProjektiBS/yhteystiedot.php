@@ -18,7 +18,7 @@ $_SESSION["csrf_token"] = $csrf_token;
         <header class="nav-bar">
             <img src="Omakuva.jpg" alt="Kuva minusta.">
             <nav class="navcontent"> 
-                <div class="navitem"><a href="./etusivu.html" class="navlink">Etusivu</a></div>
+                <div class="navitem"><a href="./index.html" class="navlink">Etusivu</a></div>
                 <div class="navitem"><a href="./tietoa.html" class="navlink">Tietoa minusta</a></div>
                 <div class="navitem"><a href="./yhteystiedot.php" class="navactive">Ota yhteyttä</a></div>
             </nav>
